@@ -1,0 +1,38 @@
+.snackbar__container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #323232;
+  color: #fff;
+  z-index: 10;
+  margin: 16px;
+  border-radius: 4px;
+  min-width: 344px;
+  max-width: 672px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  padding: 8px;
+}
+
+.snackbar__label {
+  line-height: 1.2rem;
+  padding-left: 16px;
+  padding-right: 8px;
+  width: 100%;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.snackbar__dismiss {
+  color: #ae7ee9;
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  padding: 8px;
+}
