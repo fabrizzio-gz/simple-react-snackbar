@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import ReactDOM from "react-dom";
 
 import "./Snackbar.css";
 import SnackbarContext from "./store/snackbar-context";
@@ -6,13 +7,14 @@ import SnackbarContext from "./store/snackbar-context";
 const Snackbar = () => {
   const snackbarCtx = useContext(SnackbarContext);
 
-  return (
+  return ReactDOM.createPortal(
     <div className="snackbar__container">
       <div className="snackbar__label">{snackbarCtx.msg}</div>
       <div className="snackbar__dismiss" onClick={snackbarCtx.onClose}>
         &times;
       </div>
-    </div>
+    </div>,
+    document.getElementById("snackbar__root")
   );
 };
 
