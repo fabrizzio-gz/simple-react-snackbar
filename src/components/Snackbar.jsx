@@ -9,7 +9,7 @@ const Snackbar = () => {
 
   return ReactDOM.createPortal(
     <div className="snackbar__container">
-      <div className="snackbar__label">{snackbarCtx.msg}</div>
+      <div className="snackbar__label">{snackbarCtx.msg || "Hello!"}</div>
       <div className="snackbar__dismiss" onClick={snackbarCtx.onClose}>
         &times;
       </div>
