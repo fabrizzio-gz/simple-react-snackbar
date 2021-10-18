@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from "react";
 
 import "./MessageInput.css";
-import SnackbarContext from "./store/snackbar-context";
+import SnackbarContext from "../store/snackbar-context";
 
 const MessageInput = () => {
   const inputRef = useRef();

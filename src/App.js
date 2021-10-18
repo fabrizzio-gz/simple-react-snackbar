@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
-import MessageInput from "./components/MessageInput";
-import Snackbar from "./components/Snackbar";
+import MessageInput from "./components/MessageInput/MessageInput";
+import Snackbar from "./components/Snackbar/Snackbar";
 import SnackbarContext from "./components/store/snackbar-context";
 
 const App = () => {
